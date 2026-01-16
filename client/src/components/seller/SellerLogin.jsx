@@ -32,11 +32,11 @@ const SellerLogin = () => {
     <div>
       <form
         onSubmit={onSubmitHandler}
-        className="min-h-screen flex items-center text-sm text-black"
+        className="min-h-screen flex items-center text-sm text-gray-600"
       >
         <div className="flex flex-col gap-5 m-auto items-start p-8 py-12 min-w-80 sm:min-w-88
-                        rounded-2xl shadow-xl border border-gray-400">
-          <p className="text-2xl text-black font-medium m-auto">
+                        rounded-lg shadow-xl border border-gray-200">
+          <p className="text-2xl font-medium m-auto">
             <span className="text-primary">Seller</span> Login
           </p>
 
@@ -44,10 +44,10 @@ const SellerLogin = () => {
             <p>Email</p>
             <input
               type="email"
-              placeholder="Enter Seller Email"
+              placeholder="Enter Your Email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="border border-gray-400 rounded w-full p-2 mt-1 outline-primary"
+              className="border border-gray-200 rounded w-full p-2 mt-1 outline-primary"
               required
             />
           </div>
@@ -56,10 +56,10 @@ const SellerLogin = () => {
             <p>Password</p>
             <input
               type="password"
-              placeholder="Enter Seller Password"
+              placeholder="Enter Your Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="border border-gray-400 rounded w-full p-2 mt-1 outline-primary"
+              className="border border-gray-200 rounded w-full p-2 mt-1 outline-primary"
               required
             />
           </div>
